@@ -1,0 +1,17 @@
+pipeline {
+agebt any
+tools {
+maven ("maven3.3.9")
+jdk ("java8")
+}
+stages { 
+stage { 
+steps ("build") {
+       echo 'building the application' 
+       }
+       }
+       stage { 
+steps ("test") {
+       echo 'test the application'
+       }
+       }
